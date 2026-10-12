@@ -1,5 +1,6 @@
 function evaluator (){
-
+let runagain=true;
+while(runagain===true){
 let name=prompt(" Enter name");
 let mark1=Number(prompt("Enter mark 1"))
  if (mark1<0 || mark1>100){
@@ -34,6 +35,7 @@ return("grade B")
     alert(total(mark1,mark2,mark3))
     alert(avg(mark1,mark2,mark3))
     alert(grade())
-    confirm("Do you want to calculate for another student?")
+    runagain=confirm("Do you want to calculate for another student?")
 
+}
 }
