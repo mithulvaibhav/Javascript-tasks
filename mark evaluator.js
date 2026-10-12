@@ -37,5 +37,5 @@ return("grade B")
     alert(grade())
     runagain=confirm("Do you want to calculate for another student?")
 
-}
+}alert("Thank you for using the mark evaluator. Have a great day!");
 }
