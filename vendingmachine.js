@@ -54,16 +54,23 @@ function startMachine() {
                 let price = 0;
                 let itemName = "";
 
-                if (itemNumber === 1) { price = 2; itemName = "Potato Chips"; }
-                else if (itemNumber === 2) { price = 3; itemName = "Chocolate Bar"; }
-                else if (itemNumber === 3) { price = 1; itemName = "Bottled Water"; }
-                else if (itemNumber === 4) { price = 2; itemName = "Soda Can"; }
-                else if (itemNumber === 5) { price = 4; itemName = "Gummy Bears"; }
+                if (itemNumber === 1) 
+                    { price = 2; itemName = "Potato Chips"; }
+                else if (itemNumber === 2) 
+                    { price = 3; itemName = "Chocolate Bar"; }
+                else if (itemNumber === 3) 
+                    { price = 1; itemName = "Water Bottle"; }
+                else if (itemNumber === 4) 
+                    { price = 2; itemName = "Soda Can"; }
+                else if (itemNumber === 5)
+                     { price = 4; itemName = "Gummy Bears"; }
 
             
-                if (money < price) {
+                if (money < price)
+                     {
                     alert("Insufficient balance! " + itemName + " costs $" + price + ", but you only inserted $" + money + ".");
-                } else if (money === price) {
+                } else if (money === price) 
+                    {
                     alert("Exact payment accepted. Item selected: " + itemName + ". No change returned.");
                     finishPurchase(itemName, itemNumber);
                 } else {
@@ -71,6 +78,7 @@ function startMachine() {
                     alert("Payment accepted. Item selected: " + itemName + ". Your change is $" + change + ".");
                     finishPurchase(itemName, itemNumber);
                 }
+                
             }
         }
 
