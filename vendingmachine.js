@@ -3,7 +3,7 @@ function displayMenu() {
     console.log("=== VENDING MACHINE MENU ===");
     console.log("1. Potato Chips - $2");
     console.log("2. Chocolate Bar - $3");
-    console.log("3. Bottled Water - $1");
+    console.log("3. Water Bottle- $1");
     console.log("4. Soda Can - $2");
     console.log("5. Gummy Bears - $4");
     console.log("============================");
@@ -78,7 +78,7 @@ function startMachine() {
                     alert("Payment accepted. Item selected: " + itemName + ". Your change is $" + change + ".");
                     finishPurchase(itemName, itemNumber);
                 }
-                
+
             }
         }
 
